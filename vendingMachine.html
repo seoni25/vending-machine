@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자판기</title>
+    <link rel="icon" type="images/logo.png" href="images/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="styles/vendingMachine.css"/>
+    <script src="scripts/vendingMachine.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h2>Vending Machine For You</h2>
+        </header>
+        <main id="machine">
+            <div id="items">
+                <div id="item-list">
+                    <div class="item"><img id="item1" src="images/cola-original.svg"/><button class="select_button" onclick="buy(this)">1000</button>
+                    </div>
+                    <div class="item"><img id="item2" src="images/cola-orange.svg"/><button class="select_button" onclick="buy(this)">1500</button>
+                    </div>
+                    <div class="item"><img id="item3" src="images/cola-yellow.svg"/><button class="select_button" onclick="buy(this)">2000</button>
+                    </div>
+                    <div class="item"><img id="item4" src="images/cola-green.svg"/><button class="select_button" onclick="buy(this)">2500</button>
+                    </div>
+                    <div class="item"><img id="item5" src="images/cola-cool.svg"/><button class="select_button" onclick="buy(this)">3000</button>
+                    </div>
+                    <div class="item"><img id="item6" src="images/cola-violet.svg"/><button class="select_button" onclick="buy(this)">3500</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="machine-exit"></div>
+            <div id="machine-slot">
+                 <div id="machine-slot-money"></div>
+                <div id="machine-slot-coin"></div>
+               
+            </div>
+        </main>
+        <sidebar>
+            <section id="wallet">
+                <h2>wallet</h2>
+                <div id="content_wallet">
+                    <p id="wallet_money"><strong>30000</strong></p>
+                </div>
+            </section>
+            <section id="myItems">
+                 <h2>items</h2>
+                 <div id="content_items">
+                </div>
+            </section>
+            <section id="slot">
+                 <h2>slot</h2>
+                 <div id="content_slot">
+                    <input type="number" id="insertedMoney" min="1000" step="500"placeholder="입금액"/>
+                    <button id="put_button" onclick="input()">put</button>
+                    change: 
+                    <span id="change">0</span>
+                    <button id="change_button" onclick="change()">change</button>
+                </div>
+            </section>
+        </sidebar>
+    </div>
+</body>
+</html>
