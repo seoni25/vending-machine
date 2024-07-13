@@ -53,7 +53,7 @@ function buy(item) {
 
 		document.getElementById("change").innerText = change;
 
-		/*2번-->미완성*/
+		/*2번*/
 		/*item 이미지 가져오기*/
 		let itemNumber = item.getAttribute('id');
 		let itemImgId = "item"+itemNumber;
