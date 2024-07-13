@@ -1,3 +1,4 @@
+<!--vending machine-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,19 +17,30 @@
         <main id="machine">
             <div id="items">
                 <div id="item-list">
-                    <div class="item"><img id="item1" src="images/cola-original.svg"/><button class="select_button" onclick="buy(this)">1000</button>
+                    <div class="item">
+                        <img id="item1" src="images/cola-original.svg"/>
+                        <button class="select_button" id="1" onclick="buy(this)">1000</button>
                     </div>
-                    <div class="item"><img id="item2" src="images/cola-orange.svg"/><button class="select_button" onclick="buy(this)">1500</button>
+                    <div class="item">
+                        <img id="item2" src="images/cola-orange.svg"/>
+                        <button class="select_button" id="2" onclick="buy(this)">1500</button>
                     </div>
-                    <div class="item"><img id="item3" src="images/cola-yellow.svg"/><button class="select_button" onclick="buy(this)">2000</button>
+                    <div class="item">
+                        <img id="item3" src="images/cola-yellow.svg"/>
+                        <button class="select_button" id="3" onclick="buy(this)">2000</button>
                     </div>
-                    <div class="item"><img id="item4" src="images/cola-green.svg"/><button class="select_button" onclick="buy(this)">2500</button>
+                    <div class="item">
+                        <img id="item4" src="images/cola-green.svg"/>
+                        <button class="select_button" id="4" onclick="buy(this)">2500</button>
                     </div>
-                    <div class="item"><img id="item5" src="images/cola-cool.svg"/><button class="select_button" onclick="buy(this)">3000</button>
+                    <div class="item">
+                        <img id="item5" src="images/cola-cool.svg"/>
+                        <button class="select_button" id="5" onclick="buy(this)">3000</button>
                     </div>
-                    <div class="item"><img id="item6" src="images/cola-violet.svg"/><button class="select_button" onclick="buy(this)">3500</button>
+                    <div class="item">
+                        <img id="item6" src="images/cola-violet.svg"/>
+                        <button class="select_button" id="6" onclick="buy(this)">3500</button>
                     </div>
-                    
                 </div>
             </div>
             <div id="machine-exit"></div>
@@ -46,8 +58,9 @@
                 </div>
             </section>
             <section id="myItems">
-                 <h2>items</h2>
-                 <div id="content_items">
+                <h2>items</h2>
+                <div id="content_items">
+                    <!--선택한 item 이미지가 들어가는 곳-->
                 </div>
             </section>
             <section id="slot">
